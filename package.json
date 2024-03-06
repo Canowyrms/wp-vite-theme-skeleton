@@ -1,0 +1,22 @@
+{
+	"name": "",
+	"description": "",
+	"version": "0.0.0",
+	"author": "",
+	"license": "ISC",
+	"keywords": [],
+	"type": "module",
+	"packageManager" : "^pnpm@8.0.0",
+	"scripts": {
+		"dev": "NODE_ENV=development vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"@types/node": "^20.11.24",
+		"sass": "^1.0.0",
+		"typescript": "^5.3.3",
+		"vite": "^4.0.0",
+		"vite-plugin-live-reload": "^3.0.0"
+	}
+}

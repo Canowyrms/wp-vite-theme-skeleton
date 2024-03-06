@@ -1,0 +1,41 @@
+//@fmt:off
+// https://www.typescriptlang.org/tsconfig
+{
+	"compilerOptions": {
+		"strict": true,
+
+		// Modules
+		"module": "ESNext",
+		"moduleResolution": "node",
+		// TODO - Check works
+		"baseUrl": "resources/scripts",
+		/*
+		// TODO - Use this in conjunction with Vite's `resolve.alias` ?
+		"paths": {
+			"@components/*": [ "components/*" ],
+			"@views/*": [ "views/*" ]
+		},
+		*/
+		"types": [ "vite/client" ],
+
+		// Emit
+		"noEmit": true,
+
+		// Language & Environment
+		"target": "ESNext",
+		// TODO - Uncomment if using SolidJS.
+		//"jsx": "preserve",
+		//"jsxImportSource": "solid-js",
+
+		// Interop Constraints
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"isolatedModules": true
+	},
+
+	// TODO - Check works. resources/scripts/**/* ?
+	"include": [ "resources/**/*", ],
+	// TODO - Uncomment if using SolidJS.
+	"exclude": [ "node_modules", /*"solid"*/ ]
+}
+//@fmt:on
